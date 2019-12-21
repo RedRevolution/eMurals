@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nyw.eMurals.widget.ResideLayout android:id="@+id/resideLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.nyw.eMurals.theme.ColorRelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:background="?attr/menuBackground"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/top_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="80dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_menu"
+            android:layout_below="@+id/top_menu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/all"
+                    style="@style/MenuStyle"
+                    android:text="主页" />
+
+                <TextView
+                    android:id="@+id/like"
+                    style="@style/MenuStyle"
+                    android:text="收藏" />
+
+                <TextView
+                    android:id="@+id/photo"
+                    style="@style/MenuStyle"
+                    android:text="壁纸" />
+
+                <TextView
+                    android:id="@+id/setting"
+                    style="@style/MenuStyle"
+                    android:text="设置" />
+
+                <TextView
+                    android:id="@+id/share"
+                    style="@style/MenuStyle"
+                    android:text="分享" />
+
+                <TextView
+                    android:id="@+id/exit"
+                    style="@style/MenuStyle"
+                    android:text="退出" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottom_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:padding="12dp"
+                android:text="关于"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:padding="12dp"
+                android:text="主题"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </com.nyw.eMurals.theme.ColorRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.nyw.eMurals.theme.ColorView
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="?attr/colorPrimary" />
+
+        <include layout="@layout/tool_bar_layout" />
+
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+
+</com.nyw.eMurals.widget.ResideLayout>
