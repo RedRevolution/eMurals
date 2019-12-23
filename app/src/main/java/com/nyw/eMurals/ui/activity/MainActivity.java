@@ -195,10 +195,8 @@ public class MainActivity extends BaseActivity implements ColorChooserDialog.Col
                 startActivity(Intent.createChooser(intent, "选择壁纸"));
                 break;
             case R.id.setting:
-                /*mResideLayout.closePane();
+                mResideLayout.closePane();
                 mIcon.setImageDrawable(new IconicsDrawable(this).color(Color.WHITE).icon(MaterialDesignIconic.Icon.gmi_collection_video).sizeDp(20));
-                mTitle.setText(R.string.video);
-                switchFragment("休息视频");*/
                 break;
             case R.id.share:
                 /*Intent intent2 = new Intent();

@@ -100,30 +100,30 @@ public class PhotoDisplayPresenter extends RxBasePresenter<DemoView> {
 
             case Constants.CHANNLE_PICK:
                 return mNetModel.getHttpHelper().getCuratedPhotos(Constants.UNSPLASH_APP_KEY, page,
-                        Constants.NUM_PER_PAGE, Constants.ORDER_BY_LATEST);
+                        Constants.NUM_PER_PAGE, Constants.ORDER_BY_POPULAR);
 
             case Constants.CHANNLE_ARC:
-                return mNetModel.getHttpHelper().getBuildingsPhotos(Constants.UNSPLASH_APP_KEY, page,
+                return mNetModel.getHttpHelper().getBuildingsPhotos(Constants.UNSPLASH_APP_KEY, "buildings",
                         Constants.NUM_PER_PAGE);
 
             case Constants.CHANNLE_FOOD:
-                return mNetModel.getHttpHelper().getFoodsPhotos(Constants.UNSPLASH_APP_KEY, page,
+                return mNetModel.getHttpHelper().getFoodsPhotos(Constants.UNSPLASH_APP_KEY, "food",
                         Constants.NUM_PER_PAGE);
 
             case Constants.CHANNLE_NATURE:
-                return mNetModel.getHttpHelper().getNaturePhotos(Constants.UNSPLASH_APP_KEY, page,
+                return mNetModel.getHttpHelper().getNaturePhotos(Constants.UNSPLASH_APP_KEY, "nature",
                         Constants.NUM_PER_PAGE);
 
             case Constants.CHANNLE_GOOD:
-                return mNetModel.getHttpHelper().getGoodsPhotos(Constants.UNSPLASH_APP_KEY, page,
+                return mNetModel.getHttpHelper().getGoodsPhotos(Constants.UNSPLASH_APP_KEY, "good",
                         Constants.NUM_PER_PAGE);
 
             case Constants.CHANNLE_PERSON:
-                return mNetModel.getHttpHelper().getPersonPhotos(Constants.UNSPLASH_APP_KEY, page,
+                return mNetModel.getHttpHelper().getPersonPhotos(Constants.UNSPLASH_APP_KEY, "person",
                         Constants.NUM_PER_PAGE);
 
             case Constants.CHANNLE_TECH:
-                return mNetModel.getHttpHelper().getTechnologyPhotos(Constants.UNSPLASH_APP_KEY, page,
+                return mNetModel.getHttpHelper().getTechnologyPhotos(Constants.UNSPLASH_APP_KEY, "technology",
                         Constants.NUM_PER_PAGE);
             default:
                 break;

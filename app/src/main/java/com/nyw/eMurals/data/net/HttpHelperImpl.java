@@ -11,10 +11,6 @@ import okhttp3.ResponseBody;
 import retrofit2.Call;
 import rx.Observable;
 
-/**
- * Created by yuxuehai on 17-12-2.
- */
-
 public class HttpHelperImpl{
     //// TODO: 17/12/14
     private WallPagerApis mWallPagerApis;
@@ -32,28 +28,28 @@ public class HttpHelperImpl{
         return mWallPagerApis.getCuratedPhotos(clientId, page, per_page, order_by);
     }
 
-    public Observable<List<UnsplashResult>> getBuildingsPhotos(String clientId, int page, int per_page) {
-        return mWallPagerApis.getBuildingsPhotos(clientId, page, per_page);
+    public Observable<List<UnsplashResult>> getBuildingsPhotos(String clientId, String query, int count) {
+        return mWallPagerApis.getBuildingsPhotos(clientId, query, count);
     }
 
-    public Observable<List<UnsplashResult>> getFoodsPhotos(String clientId, int page, int per_page) {
-        return mWallPagerApis.getFoodsPhotos(clientId, page, per_page);
+    public Observable<List<UnsplashResult>> getFoodsPhotos(String clientId, String query, int count) {
+        return mWallPagerApis.getFoodsPhotos(clientId, query, count);
     }
 
-    public Observable<List<UnsplashResult>> getNaturePhotos(String clientId, int page, int per_page) {
-        return mWallPagerApis.getNaturePhotos(clientId, page, per_page);
+    public Observable<List<UnsplashResult>> getNaturePhotos(String clientId, String query, int count) {
+        return mWallPagerApis.getNaturePhotos(clientId, query, count);
     }
 
-    public Observable<List<UnsplashResult>> getGoodsPhotos(String clientId, int page, int per_page) {
-        return mWallPagerApis.getGoodsPhotos(clientId, page, per_page);
+    public Observable<List<UnsplashResult>> getGoodsPhotos(String clientId, String query, int count) {
+        return mWallPagerApis.getGoodsPhotos(clientId, query, count);
     }
 
-    public Observable<List<UnsplashResult>> getPersonPhotos(String clientId, int page, int per_page) {
-        return mWallPagerApis.getPersonPhotos(clientId, page, per_page);
+    public Observable<List<UnsplashResult>> getPersonPhotos(String clientId, String query, int count) {
+        return mWallPagerApis.getPersonPhotos(clientId, query, count);
     }
 
-    public Observable<List<UnsplashResult>> getTechnologyPhotos(String clientId, int page, int per_page) {
-        return mWallPagerApis.getTechnologyPhotos(clientId, page, per_page);
+    public Observable<List<UnsplashResult>> getTechnologyPhotos(String clientId, String query, int count) {
+        return mWallPagerApis.getTechnologyPhotos(clientId, query, count);
     }
 
     public Observable<PhotoInfo> getPhotoInfo(String id, String clienId) {
