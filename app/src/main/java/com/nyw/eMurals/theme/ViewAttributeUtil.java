@@ -1,6 +1,5 @@
 package com.nyw.eMurals.theme;
 
-
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
@@ -8,10 +7,6 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
-/**
- * Created by chengli on 15/6/8.
- */
 public class ViewAttributeUtil {
 
     public static int getAttributeValue(AttributeSet attr, int paramInt) {

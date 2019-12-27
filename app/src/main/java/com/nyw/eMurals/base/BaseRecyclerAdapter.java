@@ -16,10 +16,6 @@ import com.nyw.eMurals.ui.interfaces.OnLoadMoreListener;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by yuxuehai on 17-12-2.
- */
-
 public abstract class BaseRecyclerAdapter<T, D extends RecyclerView.ViewHolder>
         extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 

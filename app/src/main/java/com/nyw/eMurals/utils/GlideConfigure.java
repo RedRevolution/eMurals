@@ -14,10 +14,6 @@ import com.bumptech.glide.module.GlideModule;
 import com.bumptech.glide.request.target.ViewTarget;
 import com.nyw.eMurals.R;
 
-/**
- * Created by yuxuehai on 17-12-6.
- */
-
 public class GlideConfigure implements GlideModule{
 
     private static final String TAG = "MyGlideModule";

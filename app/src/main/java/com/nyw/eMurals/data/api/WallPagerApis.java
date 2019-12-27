@@ -15,10 +15,6 @@ import retrofit2.http.Query;
 import retrofit2.http.Url;
 import rx.Observable;
 
-/**
- * Created by yuxuehai on 17-12-2.
- */
-
 public interface WallPagerApis {
 
     @GET("photos")

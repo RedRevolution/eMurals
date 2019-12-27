@@ -18,11 +18,6 @@ import rx.Subscriber;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
-
-/**
- * Created by yuxuehai on 17-12-3.
- */
-
 public class PhotoDisplayPresenter extends RxBasePresenter<DemoView> {
 
     private NetModel mNetModel;
@@ -46,7 +41,6 @@ public class PhotoDisplayPresenter extends RxBasePresenter<DemoView> {
     }
 
     public void requestDatas(String channel, int page) {
-        // TODO: 17/12/14
         Observable<List<UnsplashResult>> photoesData = getPhotoesData(channel, page);
         if (photoesData != null) {
             Subscription subscription = photoesData.subscribeOn(Schedulers.io())
@@ -103,22 +97,22 @@ public class PhotoDisplayPresenter extends RxBasePresenter<DemoView> {
                         Constants.NUM_PER_PAGE, Constants.ORDER_BY_POPULAR);
 
             case Constants.CHANNLE_ARC:
-                return mNetModel.getHttpHelper().getBuildingsPhotos(Constants.UNSPLASH_APP_KEY, "Buildings", 15);
+                return mNetModel.getHttpHelper().getBuildingsPhotos(Constants.UNSPLASH_APP_KEY, "Buildings", 20);
 
             case Constants.CHANNLE_FOOD:
-                return mNetModel.getHttpHelper().getFoodsPhotos(Constants.UNSPLASH_APP_KEY, "Food", 15);
+                return mNetModel.getHttpHelper().getFoodsPhotos(Constants.UNSPLASH_APP_KEY, "Food", 20);
 
             case Constants.CHANNLE_NATURE:
-                return mNetModel.getHttpHelper().getNaturePhotos(Constants.UNSPLASH_APP_KEY, "Nature", 15);
+                return mNetModel.getHttpHelper().getNaturePhotos(Constants.UNSPLASH_APP_KEY, "Nature", 20);
 
             case Constants.CHANNLE_GOOD:
-                return mNetModel.getHttpHelper().getGoodsPhotos(Constants.UNSPLASH_APP_KEY, "Goods", 15);
+                return mNetModel.getHttpHelper().getGoodsPhotos(Constants.UNSPLASH_APP_KEY, "Goods", 20);
 
             case Constants.CHANNLE_PERSON:
-                return mNetModel.getHttpHelper().getPersonPhotos(Constants.UNSPLASH_APP_KEY, "Person", 15);
+                return mNetModel.getHttpHelper().getPersonPhotos(Constants.UNSPLASH_APP_KEY, "Person", 20);
 
             case Constants.CHANNLE_TECH:
-                return mNetModel.getHttpHelper().getTechnologyPhotos(Constants.UNSPLASH_APP_KEY, "Technology", 15);
+                return mNetModel.getHttpHelper().getTechnologyPhotos(Constants.UNSPLASH_APP_KEY, "Technology", 20);
             default:
                 break;
         }

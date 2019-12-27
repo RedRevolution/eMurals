@@ -4,10 +4,6 @@ package com.nyw.eMurals.data;
 import com.nyw.eMurals.data.net.HttpHelperImpl;
 import com.nyw.eMurals.data.net.HttpManage;
 
-/**
- * Created by yuxuehai on 17-12-2.
- */
-
 public class NetModel {
 
     private volatile static NetModel mNetModel;

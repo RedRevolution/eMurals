@@ -1,9 +1,5 @@
 package com.nyw.eMurals.data.net;
 
-/**
- * Created by yuxuehai on 17-12-17.
- */
-
 public class DownLoadEvent {
 
     private long totalLength;

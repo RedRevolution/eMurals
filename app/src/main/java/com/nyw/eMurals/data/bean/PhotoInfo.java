@@ -4,32 +4,7 @@ import com.google.gson.Gson;
 
 import java.util.List;
 
-/**
- * Created by yuxuehai on 2017-12-2.
- */
-
 public class PhotoInfo {
-
-    /**
-     * id : oCbrjDECdK0
-     * created_at : 2016-08-14T07:40:54-04:00
-     * updated_at : 2016-08-14T23:30:37-04:00
-     * width : 3824
-     * height : 3064
-     * color : #EEE2DB
-     * slug : null
-     * downloads : 118
-     * likes : 37
-     * views : 150861
-     * liked_by_user : false
-     * exif : {"make":"Panasonic","model":"DMC-GM1","exposure_time":"1/4000","aperture":null,"focal_length":"20","iso":200}
-     * current_user_collections : []
-     * urls : {"raw":"https://images.unsplash.com/photo-1471174826377-f3da3bd635e4","full":"https://images.unsplash.com/photo-1471174826377-f3da3bd635e4?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=2b803f28ca67b2563ebbb4119a6bd5b0","regular":"https://images.unsplash.com/photo-1471174826377-f3da3bd635e4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=d13aff73ebd7381986f63661be62347b","small":"https://images.unsplash.com/photo-1471174826377-f3da3bd635e4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&s=b7902c825644e56bfa4f66eed067fe4e","thumb":"https://images.unsplash.com/photo-1471174826377-f3da3bd635e4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d6c02ab86260199bb4e22797c896889e"}
-     * categories : [{"id":8,"title":"Objects","photo_count":13840,"links":{"self":"https://api.unsplash.com/categories/8","photos":"https://api.unsplash.com/categories/8/photos"}},{"id":8,"title":"Objects","photo_count":13840,"links":{"self":"https://api.unsplash.com/categories/8","photos":"https://api.unsplash.com/categories/8/photos"}},{"id":7,"title":"Technology","photo_count":1407,"links":{"self":"https://api.unsplash.com/categories/7","photos":"https://api.unsplash.com/categories/7/photos"}}]
-     * links : {"self":"https://api.unsplash.com/photos/oCbrjDECdK0","html":"http://unsplash.com/photos/oCbrjDECdK0","download":"http://unsplash.com/photos/oCbrjDECdK0/download","download_location":"https://api.unsplash.com/photos/oCbrjDECdK0/download"}
-     * user : {"id":"wpPybVWRH5A","updated_at":"2017-05-19T19:56:17-04:00","username":"ultralinx","name":"Oliur Rahman","first_name":"Oliur","last_name":"Rahman","portfolio_url":"http://oliur.com","bio":"I'm a designer and entrepreneur who enjoys taking pictures in my free time.","location":"United Kingdom","total_likes":0,"total_photos":12,"total_collections":0,"profile_image":{"small":"https://images.unsplash.com/profile-1469963995475-273f3742cda7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=7c661ead6e674f4b453fb13ad5968b31","medium":"https://images.unsplash.com/profile-1469963995475-273f3742cda7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=c995b27989309541e4ebc53452a9086c","large":"https://images.unsplash.com/profile-1469963995475-273f3742cda7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=0955f4e2ab31fe98fa04e8eab788d232"},"links":{"self":"https://api.unsplash.com/users/ultralinx","html":"http://unsplash.com/@ultralinx","photos":"https://api.unsplash.com/users/ultralinx/photos","likes":"https://api.unsplash.com/users/ultralinx/likes","portfolio":"https://api.unsplash.com/users/ultralinx/portfolio","following":"https://api.unsplash.com/users/ultralinx/following","followers":"https://api.unsplash.com/users/ultralinx/followers"}}
-     */
-
     private String id;
     private String created_at;
     private String updated_at;
@@ -261,14 +236,6 @@ public class PhotoInfo {
     }
 
     public static class Urls {
-        /**
-         * raw : https://images.unsplash.com/photo-1471174826377-f3da3bd635e4
-         * full : https://images.unsplash.com/photo-1471174826377-f3da3bd635e4?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=2b803f28ca67b2563ebbb4119a6bd5b0
-         * regular : https://images.unsplash.com/photo-1471174826377-f3da3bd635e4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=d13aff73ebd7381986f63661be62347b
-         * small : https://images.unsplash.com/photo-1471174826377-f3da3bd635e4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&s=b7902c825644e56bfa4f66eed067fe4e
-         * thumb : https://images.unsplash.com/photo-1471174826377-f3da3bd635e4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d6c02ab86260199bb4e22797c896889e
-         */
-
         private String raw;
         private String full;
         private String regular;
@@ -322,13 +289,6 @@ public class PhotoInfo {
     }
 
     public static class Links {
-        /**
-         * self : https://api.unsplash.com/photos/oCbrjDECdK0
-         * html : http://unsplash.com/photos/oCbrjDECdK0
-         * download : http://unsplash.com/photos/oCbrjDECdK0/download
-         * download_location : https://api.unsplash.com/photos/oCbrjDECdK0/download
-         */
-
         private String self;
         private String html;
         private String download;
@@ -373,23 +333,6 @@ public class PhotoInfo {
     }
 
     public static class User {
-        /**
-         * id : wpPybVWRH5A
-         * updated_at : 2017-05-19T19:56:17-04:00
-         * username : ultralinx
-         * name : Oliur Rahman
-         * first_name : Oliur
-         * last_name : Rahman
-         * portfolio_url : http://oliur.com
-         * bio : I'm a designer and entrepreneur who enjoys taking pictures in my free time.
-         * location : United Kingdom
-         * total_likes : 0
-         * total_photos : 12
-         * total_collections : 0
-         * profile_image : {"small":"https://images.unsplash.com/profile-1469963995475-273f3742cda7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=7c661ead6e674f4b453fb13ad5968b31","medium":"https://images.unsplash.com/profile-1469963995475-273f3742cda7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=c995b27989309541e4ebc53452a9086c","large":"https://images.unsplash.com/profile-1469963995475-273f3742cda7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=0955f4e2ab31fe98fa04e8eab788d232"}
-         * links : {"self":"https://api.unsplash.com/users/ultralinx","html":"http://unsplash.com/@ultralinx","photos":"https://api.unsplash.com/users/ultralinx/photos","likes":"https://api.unsplash.com/users/ultralinx/likes","portfolio":"https://api.unsplash.com/users/ultralinx/portfolio","following":"https://api.unsplash.com/users/ultralinx/following","followers":"https://api.unsplash.com/users/ultralinx/followers"}
-         */
-
         private String id;
         private String updated_at;
         private String username;
@@ -523,12 +466,6 @@ public class PhotoInfo {
         }
 
         public static class ProfileImage {
-            /**
-             * small : https://images.unsplash.com/profile-1469963995475-273f3742cda7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=7c661ead6e674f4b453fb13ad5968b31
-             * medium : https://images.unsplash.com/profile-1469963995475-273f3742cda7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=c995b27989309541e4ebc53452a9086c
-             * large : https://images.unsplash.com/profile-1469963995475-273f3742cda7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=0955f4e2ab31fe98fa04e8eab788d232
-             */
-
             private String small;
             private String medium;
             private String large;
@@ -564,16 +501,6 @@ public class PhotoInfo {
         }
 
         public static class LinksX {
-            /**
-             * self : https://api.unsplash.com/users/ultralinx
-             * html : http://unsplash.com/@ultralinx
-             * photos : https://api.unsplash.com/users/ultralinx/photos
-             * likes : https://api.unsplash.com/users/ultralinx/likes
-             * portfolio : https://api.unsplash.com/users/ultralinx/portfolio
-             * following : https://api.unsplash.com/users/ultralinx/following
-             * followers : https://api.unsplash.com/users/ultralinx/followers
-             */
-
             private String self;
             private String html;
             private String photos;
@@ -646,13 +573,6 @@ public class PhotoInfo {
     }
 
     public static class Categories {
-        /**
-         * id : 8
-         * title : Objects
-         * photo_count : 13840
-         * links : {"self":"https://api.unsplash.com/categories/8","photos":"https://api.unsplash.com/categories/8/photos"}
-         */
-
         private int id;
         private String title;
         private int photo_count;

@@ -9,16 +9,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-
-/**
- * Created by chengli on 15/6/10.
- */
 public class ColorUiUtil {
-    /**
-     * 切换应用主题
-     *
-     * @param rootView
-     */
     public static void changeTheme(View rootView, Resources.Theme theme) {
         if (rootView instanceof ColorUiInterface) {
             ((ColorUiInterface) rootView).setTheme(theme);

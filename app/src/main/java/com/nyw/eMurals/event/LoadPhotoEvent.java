@@ -1,9 +1,5 @@
 package com.nyw.eMurals.event;
 
-/**
- * Created by yuxuehai on 17-12-11.
- */
-
 public class LoadPhotoEvent {
 
     private long progress;

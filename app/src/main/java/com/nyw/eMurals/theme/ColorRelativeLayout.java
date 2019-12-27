@@ -6,10 +6,6 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-
-/**
- * Created by chengli on 15/6/8.
- */
 public class ColorRelativeLayout extends RelativeLayout implements ColorUiInterface {
 
     private int attr_background = -1;

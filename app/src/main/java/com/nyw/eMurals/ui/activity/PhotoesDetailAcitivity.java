@@ -12,11 +12,6 @@ import com.nyw.eMurals.data.bean.UnsplashResult;
 import com.nyw.eMurals.ui.fragment.PhotoesDetailFragment;
 import com.nyw.eMurals.utils.Constants;
 
-
-/**
- * Created by yuxuehai on 17-12-9.
- */
-
 public class PhotoesDetailAcitivity extends BaseActivity {
 
 

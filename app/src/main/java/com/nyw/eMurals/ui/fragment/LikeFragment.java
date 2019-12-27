@@ -16,10 +16,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
- * Created by zhouhu on 2018/1/9.
- */
-
 public class LikeFragment extends MvpBaseFragment<DemoView, PhotoDisplayPresenter> implements DemoView,View.OnClickListener {
 
     private static final String TAG = LikeFragment.class.getSimpleName();

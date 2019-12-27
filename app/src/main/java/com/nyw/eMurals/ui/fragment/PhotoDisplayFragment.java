@@ -27,10 +27,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
- * Created by yuxuehai on 17-12-1.
- */
-
 public class PhotoDisplayFragment extends MvpBaseFragment<DemoView, PhotoDisplayPresenter> implements DemoView,View.OnClickListener {
 
     private static final String TAG = PhotoDisplayFragment.class.getSimpleName();
@@ -62,7 +58,6 @@ public class PhotoDisplayFragment extends MvpBaseFragment<DemoView, PhotoDisplay
 
     @Override
     public int requestLayoutId() {
-        // TODO: 17/12/14
         return R.layout.viewpager_layout;
     }
 

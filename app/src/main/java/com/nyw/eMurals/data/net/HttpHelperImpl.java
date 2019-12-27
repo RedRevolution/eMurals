@@ -12,7 +12,6 @@ import retrofit2.Call;
 import rx.Observable;
 
 public class HttpHelperImpl{
-    //// TODO: 17/12/14
     private WallPagerApis mWallPagerApis;
 
     public HttpHelperImpl(WallPagerApis apis) {

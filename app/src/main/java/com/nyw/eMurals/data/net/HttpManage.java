@@ -19,11 +19,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import static com.nyw.eMurals.utils.Constants.CACHE_SIZE;
 
-
-/**
- * Created by yuxuehai on 17-12-2.
- */
-
 public class HttpManage {
     private static final int READ_TIME_OUT = 20;
     private static final int WRITE_TIME_OUT = 20;
@@ -41,7 +36,6 @@ public class HttpManage {
             loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BASIC);
             builder.addInterceptor(loggingInterceptor);
         }
-        // TODO: 17/12/14
         Cache cache = new Cache(new File(Constants.PATH_CACHE), CACHE_SIZE);
         //设置缓存
         builder.addInterceptor(new CacheInterceptor());

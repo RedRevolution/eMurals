@@ -11,10 +11,6 @@ import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.nyw.eMurals.WallPagerApplications;
 
-/**
- * Created by yuxuehai on 17-12-2.
- */
-
 public class GlideUtils {
     private static final String TAG = "GlideUtils";
 

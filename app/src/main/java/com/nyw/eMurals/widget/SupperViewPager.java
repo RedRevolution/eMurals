@@ -5,10 +5,6 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-/**
- * Created by zhouhu on 2018/1/9.
- */
-
 public class SupperViewPager extends ViewPager {
     private int screenWidth;//屏幕宽度
     public SupperViewPager(Context context) {
@@ -16,7 +12,6 @@ public class SupperViewPager extends ViewPager {
     }
     public SupperViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
-        // TODO 自动生成的构造函数存根
     }
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {

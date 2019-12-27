@@ -11,10 +11,6 @@ import com.nyw.eMurals.ui.adapter.HomePagerAdapter;
 
 import butterknife.BindView;
 
-/**
- * Created by yuxuehai on 17-11-29.
- */
-
 public class HomeFragment extends BaseFragment {
 
     @BindView(R.id.app_tabLayout)

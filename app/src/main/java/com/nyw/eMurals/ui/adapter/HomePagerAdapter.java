@@ -7,9 +7,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import com.nyw.eMurals.ui.fragment.FragmentFactory;
 import com.nyw.eMurals.utils.Constants;
 
-/**
- * Created by yuxuehai on 17-12-1.
- */
 
 public class HomePagerAdapter extends FragmentPagerAdapter {
 

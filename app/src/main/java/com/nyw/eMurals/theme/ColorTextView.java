@@ -7,10 +7,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-
-/**
- * Created by chengli on 15/6/8.
- */
 public class ColorTextView extends TextView implements ColorUiInterface {
 
     private int attr_drawable = -1;

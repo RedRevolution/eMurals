@@ -4,10 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-/**
- * Created by yuxuehai on 17-12-3.
- */
-
 public abstract class MvpBaseFragment<V,T extends BasePresenter<V>> extends BaseFragment {
 
 

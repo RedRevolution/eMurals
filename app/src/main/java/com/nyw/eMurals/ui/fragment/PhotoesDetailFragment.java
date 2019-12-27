@@ -29,10 +29,6 @@ import org.greenrobot.eventbus.ThreadMode;
 import butterknife.BindView;
 import de.hdodenhof.circleimageview.CircleImageView;
 
-/**
- * Created by yuxuehai on 17-12-9.
- */
-
 public class PhotoesDetailFragment extends MvpBaseFragment<PhotoView,
         PhotoPresenter> implements PhotoView ,View.OnClickListener{
     private static final String TAG = PhotoesDetailFragment.class.getName();

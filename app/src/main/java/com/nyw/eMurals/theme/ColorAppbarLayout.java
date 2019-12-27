@@ -6,10 +6,6 @@ import android.support.design.widget.AppBarLayout;
 import android.util.AttributeSet;
 import android.view.View;
 
-/**
- * Created by zhouhu on 2018/1/9.
- */
-
 public class ColorAppbarLayout extends AppBarLayout implements ColorUiInterface{
 
     private int attr_background = -1;

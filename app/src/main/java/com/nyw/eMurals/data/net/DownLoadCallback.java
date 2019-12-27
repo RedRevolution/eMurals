@@ -18,10 +18,6 @@ import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 import rx.subscriptions.CompositeSubscription;
 
-/**
- * Created by yuxuehai on 17-12-17.
- */
-
 public abstract class DownLoadCallback implements Callback<ResponseBody> {
 
     /**

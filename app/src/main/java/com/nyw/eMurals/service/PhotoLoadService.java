@@ -23,11 +23,6 @@ import java.io.File;
 import static com.nyw.eMurals.utils.Constants.PHOTO_ID;
 import static com.nyw.eMurals.utils.Constants.PHOTO_LOAD_URL;
 
-
-/**
- * Created by yuxuehai on 2017-12-11.
- */
-
 public class PhotoLoadService extends IntentService {
 
     private static final String TAG = PhotoLoadService.class.getName();

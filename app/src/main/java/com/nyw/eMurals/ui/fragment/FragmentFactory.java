@@ -5,10 +5,6 @@ import com.nyw.eMurals.utils.Constants;
 
 import java.util.HashMap;
 
-/**
- * Created by yuxuehai on 17-12-11.
- */
-
 public class FragmentFactory {
 
     private volatile static FragmentFactory sFragmentFactory;

@@ -9,11 +9,6 @@ import android.view.ViewGroup;
 
 import butterknife.ButterKnife;
 
-
-/**
- * Created by nyw on 18-1-2.
- */
-
 public abstract class BaseFragment extends Fragment{
 
     @Override
@@ -35,7 +30,6 @@ public abstract class BaseFragment extends Fragment{
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        //// TODO: 18/1/4
         loadData();
         initData();
         initListener();

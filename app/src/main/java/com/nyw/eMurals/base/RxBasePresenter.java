@@ -4,10 +4,6 @@ import android.content.Context;
 
 import rx.subscriptions.CompositeSubscription;
 
-/**
- * Created by yuxuehai on 17-12-15.
- */
-
 public class RxBasePresenter<T> extends BasePresenter<T> {
 
     protected CompositeSubscription mSubscriptions;

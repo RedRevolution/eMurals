@@ -5,29 +5,7 @@ import com.google.gson.Gson;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * Created by yuxuehai on 2017-12-2.
- */
-
 public class UnsplashResult implements Serializable {
-
-
-    /**
-     * id : xIFbDeGcy44
-     * created_at : 2016-08-15T05:40:38-04:00
-     * updated_at : 2017-05-18T23:26:36-04:00
-     * width : 5760
-     * height : 3840
-     * color : #E5E1DE
-     * likes : 191
-     * liked_by_user : false
-     * user : {"id":"4nD5SIrywGs","updated_at":"2017-05-19T02:07:23-04:00","username":"stefanjonhson","name":"Stefan Johnson","first_name":"Stefan","last_name":"Johnson","portfolio_url":"http://stefanjohnson.co.uk/","bio":"London based food, drink and editorial photographer. Shooting out of Clapham Studio in Battersea, London, I have worked with some of the UKs leading chefs, brands and magazines.","location":"London ","total_likes":0,"total_photos":5,"total_collections":0,"profile_image":{"small":"https://images.unsplash.com/profile-fb-1471253165-7350e1314fde.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=1e06cd2892ca62b5d51b51f79d55e5bd","medium":"https://images.unsplash.com/profile-fb-1471253165-7350e1314fde.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=38cc7f45342357ee168312a25a9cb8fd","large":"https://images.unsplash.com/profile-fb-1471253165-7350e1314fde.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=cc874b863f22fcd377f9b5e5efe8a3d8"},"links":{"self":"https://api.unsplash.com/users/stefanjonhson","html":"http://unsplash.com/@stefanjonhson","photos":"https://api.unsplash.com/users/stefanjonhson/photos","likes":"https://api.unsplash.com/users/stefanjonhson/likes","portfolio":"https://api.unsplash.com/users/stefanjonhson/portfolio","following":"https://api.unsplash.com/users/stefanjonhson/following","followers":"https://api.unsplash.com/users/stefanjonhson/followers"}}
-     * current_user_collections : []
-     * urls : {"raw":"https://images.unsplash.com/photo-1471253794676-0f039a6aae9d","full":"https://images.unsplash.com/photo-1471253794676-0f039a6aae9d?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=fe50060f79c731863365a3c076aec395","regular":"https://images.unsplash.com/photo-1471253794676-0f039a6aae9d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=fc659a55688c3107eb638fc9f3136567","small":"https://images.unsplash.com/photo-1471253794676-0f039a6aae9d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&s=8607235745340a1826c3560df5328ccb","thumb":"https://images.unsplash.com/photo-1471253794676-0f039a6aae9d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=2c68e8e2387b616fade02085d48f26aa"}
-     * categories : [{"id":3,"title":"Food & Drink","photo_count":3124,"links":{"self":"https://api.unsplash.com/categories/3","photos":"https://api.unsplash.com/categories/3/photos"}}]
-     * links : {"self":"https://api.unsplash.com/photos/xIFbDeGcy44","html":"http://unsplash.com/photos/xIFbDeGcy44","download":"http://unsplash.com/photos/xIFbDeGcy44/download","download_location":"https://api.unsplash.com/photos/xIFbDeGcy44/download"}
-     */
-
     private String id;
     private String created_at;
     private String updated_at;
@@ -152,23 +130,6 @@ public class UnsplashResult implements Serializable {
     }
 
     public static class User implements Serializable {
-        /**
-         * id : 4nD5SIrywGs
-         * updated_at : 2017-05-19T02:07:23-04:00
-         * username : stefanjonhson
-         * name : Stefan Johnson
-         * first_name : Stefan
-         * last_name : Johnson
-         * portfolio_url : http://stefanjohnson.co.uk/
-         * bio : London based food, drink and editorial photographer. Shooting out of Clapham Studio in Battersea, London, I have worked with some of the UKs leading chefs, brands and magazines.
-         * location : London
-         * total_likes : 0
-         * total_photos : 5
-         * total_collections : 0
-         * profile_image : {"small":"https://images.unsplash.com/profile-fb-1471253165-7350e1314fde.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=1e06cd2892ca62b5d51b51f79d55e5bd","medium":"https://images.unsplash.com/profile-fb-1471253165-7350e1314fde.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=38cc7f45342357ee168312a25a9cb8fd","large":"https://images.unsplash.com/profile-fb-1471253165-7350e1314fde.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=cc874b863f22fcd377f9b5e5efe8a3d8"}
-         * links : {"self":"https://api.unsplash.com/users/stefanjonhson","html":"http://unsplash.com/@stefanjonhson","photos":"https://api.unsplash.com/users/stefanjonhson/photos","likes":"https://api.unsplash.com/users/stefanjonhson/likes","portfolio":"https://api.unsplash.com/users/stefanjonhson/portfolio","following":"https://api.unsplash.com/users/stefanjonhson/following","followers":"https://api.unsplash.com/users/stefanjonhson/followers"}
-         */
-
         private String id;
         private String updated_at;
         private String username;
@@ -302,12 +263,6 @@ public class UnsplashResult implements Serializable {
         }
 
         public static class ProfileImage  implements Serializable {
-            /**
-             * small : https://images.unsplash.com/profile-fb-1471253165-7350e1314fde.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=1e06cd2892ca62b5d51b51f79d55e5bd
-             * medium : https://images.unsplash.com/profile-fb-1471253165-7350e1314fde.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=38cc7f45342357ee168312a25a9cb8fd
-             * large : https://images.unsplash.com/profile-fb-1471253165-7350e1314fde.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=cc874b863f22fcd377f9b5e5efe8a3d8
-             */
-
             private String small;
             private String medium;
             private String large;
@@ -343,15 +298,6 @@ public class UnsplashResult implements Serializable {
         }
 
         public static class Links implements Serializable {
-            /**
-             * self : https://api.unsplash.com/users/stefanjonhson
-             * html : http://unsplash.com/@stefanjonhson
-             * photos : https://api.unsplash.com/users/stefanjonhson/photos
-             * likes : https://api.unsplash.com/users/stefanjonhson/likes
-             * portfolio : https://api.unsplash.com/users/stefanjonhson/portfolio
-             * following : https://api.unsplash.com/users/stefanjonhson/following
-             * followers : https://api.unsplash.com/users/stefanjonhson/followers
-             */
 
             private String self;
             private String html;
@@ -425,14 +371,6 @@ public class UnsplashResult implements Serializable {
     }
 
     public static class Urls implements Serializable {
-        /**
-         * raw : https://images.unsplash.com/photo-1471253794676-0f039a6aae9d
-         * full : https://images.unsplash.com/photo-1471253794676-0f039a6aae9d?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=fe50060f79c731863365a3c076aec395
-         * regular : https://images.unsplash.com/photo-1471253794676-0f039a6aae9d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=fc659a55688c3107eb638fc9f3136567
-         * small : https://images.unsplash.com/photo-1471253794676-0f039a6aae9d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&s=8607235745340a1826c3560df5328ccb
-         * thumb : https://images.unsplash.com/photo-1471253794676-0f039a6aae9d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=2c68e8e2387b616fade02085d48f26aa
-         */
-
         private String raw;
         private String full;
         private String regular;
@@ -486,13 +424,6 @@ public class UnsplashResult implements Serializable {
     }
 
     public static class LinksX implements Serializable {
-        /**
-         * self : https://api.unsplash.com/photos/xIFbDeGcy44
-         * html : http://unsplash.com/photos/xIFbDeGcy44
-         * download : http://unsplash.com/photos/xIFbDeGcy44/download
-         * download_location : https://api.unsplash.com/photos/xIFbDeGcy44/download
-         */
-
         private String self;
         private String html;
         private String download;
@@ -537,13 +468,6 @@ public class UnsplashResult implements Serializable {
     }
 
     public static class Categories implements Serializable {
-        /**
-         * id : 3
-         * title : Food & Drink
-         * photo_count : 3124
-         * links : {"self":"https://api.unsplash.com/categories/3","photos":"https://api.unsplash.com/categories/3/photos"}
-         */
-
         private int id;
         private String title;
         private int photo_count;
@@ -587,11 +511,6 @@ public class UnsplashResult implements Serializable {
         }
 
         public static class LinksXX implements Serializable {
-            /**
-             * self : https://api.unsplash.com/categories/3
-             * photos : https://api.unsplash.com/categories/3/photos
-             */
-
             private String self;
             private String photos;
 

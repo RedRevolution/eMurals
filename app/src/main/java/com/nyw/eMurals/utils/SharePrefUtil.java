@@ -12,10 +12,6 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.util.Map;
 
-/**
- * Created by yuxuehai on 17-2-17.
- */
-
 public class SharePrefUtil {
 
 

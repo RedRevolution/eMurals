@@ -28,10 +28,6 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
-/**
- * Created by yuxuehai on 17-12-10.
- */
-
 public class PhotoPresenter extends RxBasePresenter<PhotoView> {
 
     private NetModel mNetModel;

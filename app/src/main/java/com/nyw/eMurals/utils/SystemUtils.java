@@ -3,9 +3,6 @@ package com.nyw.eMurals.utils;
 import android.app.Activity;
 import android.graphics.Rect;
 
-/**
- * Created by dongjunkun on 2015/11/24.
- */
 public class SystemUtils {
 
     /**

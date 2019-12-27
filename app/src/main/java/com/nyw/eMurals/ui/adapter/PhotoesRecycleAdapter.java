@@ -18,10 +18,6 @@ import com.nyw.eMurals.utils.GlideUtils;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-/**
- * Created by yuxuehai on 17-12-2.
- */
-
 public class PhotoesRecycleAdapter extends BaseRecyclerAdapter<UnsplashResult, PhotoesRecycleAdapter.PhotoesViewHolder> {
 
     public PhotoesRecycleAdapter(Context context, boolean loadMore){

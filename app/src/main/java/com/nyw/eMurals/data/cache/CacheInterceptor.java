@@ -14,9 +14,7 @@ import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
 
-/**
- * Created by yuxuehai on 17-12-2.
- */
+
 public class CacheInterceptor implements Interceptor {
 
     @Override

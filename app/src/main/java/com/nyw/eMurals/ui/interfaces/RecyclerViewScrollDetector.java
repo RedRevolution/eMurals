@@ -2,10 +2,6 @@ package com.nyw.eMurals.ui.interfaces;
 
 import android.support.v7.widget.RecyclerView;
 
-/**
- * Created by yuxuehai on 17-12-4.
- */
-
 public abstract class RecyclerViewScrollDetector extends RecyclerView.OnScrollListener {
 
     public abstract void onScrollUp();

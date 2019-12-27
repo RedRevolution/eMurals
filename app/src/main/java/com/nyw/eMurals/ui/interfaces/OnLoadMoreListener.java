@@ -1,9 +1,5 @@
 package com.nyw.eMurals.ui.interfaces;
 
-/**
- * Created by yuxuehai on 17-12-3.
- */
-
 public interface OnLoadMoreListener {
     /**
      * 加载更多的回调方法

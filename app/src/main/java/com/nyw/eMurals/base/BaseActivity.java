@@ -11,10 +11,6 @@ import com.nyw.eMurals.R;
 import com.nyw.eMurals.theme.Theme;
 import com.nyw.eMurals.utils.PreUtils;
 
-
-/**
- * Created by nyw on 2018/1/2.
- */
 public abstract class BaseActivity extends AppCompatActivity {
 
     private static final String TAG = BaseActivity.class.getName();

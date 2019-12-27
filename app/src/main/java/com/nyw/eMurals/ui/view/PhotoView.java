@@ -4,10 +4,6 @@ package com.nyw.eMurals.ui.view;
 import com.nyw.eMurals.base.BaseView;
 import com.nyw.eMurals.data.bean.PhotoInfo;
 
-/**
- * Created by yuxuehai on 17-12-10.
- */
-
 public interface PhotoView extends BaseView {
     void setPhotoInfo(PhotoInfo photoInfo);
 

@@ -2,10 +2,6 @@ package com.nyw.eMurals.base;
 
 import android.content.Context;
 
-/**
- * Created by nyw on 17-11-27.
- */
-
 public abstract class BasePresenter<V> {
 
 
